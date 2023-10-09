@@ -12,6 +12,7 @@ Please complete the following tasks:
 
 
 solution for this task:
+
 1.)Bug Identification:
 The bug in Alex's React web application is that the counter for tracking how many times the state variable has been updated is not updating as expected.
 
