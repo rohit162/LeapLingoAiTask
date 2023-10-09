@@ -14,9 +14,11 @@ Please complete the following tasks:
 solution for this task:
 1.)Bug Identification:
 The bug in Alex's React web application is that the counter for tracking how many times the state variable has been updated is not updating as expected.
+
 2.)Cause of Bug(infinite loop of updates in useEffect):
 In this version, you have a useEffect without any dependencies specified (i.e., no second argument array []). This means that the effect runs on every render or re-render of the component.
-When this effect runs, it increments the count state by 1. However, since there are no specific dependencies, it runs unconditionally, leading to an infinite loop of updates. This can cause performance issues and unexpected behavior. 
+When this effect runs, it increments the count state by 1. However, since there are no specific dependencies, it runs unconditionally, leading to an infinite loop of updates. This can cause performance issues and unexpected behavior.
+
 3.)Solution to Fix the Bug
 use this ---> `useEffect(() => { setCount(count + 1); }, [value]);` istead of `useEffect(() => setCount(count + 1));`
 
