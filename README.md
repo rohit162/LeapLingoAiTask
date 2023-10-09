@@ -19,3 +19,7 @@ In this version, you have a useEffect without any dependencies specified (i.e., 
 When this effect runs, it increments the count state by 1. However, since there are no specific dependencies, it runs unconditionally, leading to an infinite loop of updates. This can cause performance issues and unexpected behavior. 
 3.)Solution to Fix the Bug
 use this ---> `useEffect(() => { setCount(count + 1); }, [value]);` istead of `useEffect(() => setCount(count + 1));`
+
+![image](https://github.com/rohit162/LeapLingoAiTask/assets/54887902/292e4305-cf21-4741-8d14-0ba50a1ff8fc)
+
+![Screenshot (16)](https://github.com/rohit162/LeapLingoAiTask/assets/54887902/020b9caf-6c28-4b10-a00c-f8381fb32831)
