@@ -19,3 +19,4 @@ In this version, you have a useEffect without any dependencies specified (i.e., 
 When this effect runs, it increments the count state by 1. However, since there are no specific dependencies, it runs unconditionally, leading to an infinite loop of updates. This can cause performance issues and unexpected behavior. 
 3.)Solution to Fix the Bug
 use this ---> `useEffect(() => { setCount(count + 1); }, [value]);` istead of `useEffect(() => setCount(count + 1));`
+
