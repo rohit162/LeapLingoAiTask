@@ -1,0 +1,29 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.flex1 {
+  margin-top: 100px;
+}
+.flex2 {
+  margin-top: 15px;
+}
+.chnge-clr {
+  color: red;
+  font-weight: bold;
+}
+.box {
+  border: 2px solid grey;
+  border-radius: 3px;
+}
+.box:hover {
+  border-color: blue; /* Change border color to blue on hover */
+}
+input:focus {
+  border-color: blue; /* Change border color to blue when focused */
+}
